@@ -1,0 +1,330 @@
+/* ClanButton CSS 2016 */
+
+
+html {
+    height: 100%;
+}
+
+body {
+    background-repeat: no-repeat;
+    background: linear-gradient(white -800%, #325082 96%, #FF7D00 10%);
+}
+
+p.findingtext{
+    font-family: Helvetica;
+    color: white;
+	font-size: 17px;
+	text-align: center;
+	margin-top:30px;
+}
+
+p.gamename {
+    font-family: Helvetica;
+    color: #FF7D00;
+    font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+p.stats {
+    font-family: Helvetica;
+	margin-top: 50px;
+    color: #FF7D00;
+    font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+p.currentsearches {
+    font-family: Helvetica;
+    color: #FF7D00;
+    font-size: 14px;
+	font-weight: bold;
+	border: 1px solid #325082;
+	text-align: center;
+	height: 40px;
+	width: 150px;
+}
+
+p.playersfound {
+	padding-top: 10px;
+    font-family: Helvetica;
+	overflow: auto;
+    color: white;
+    font-size: 17px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: auto;
+}
+
+p.abouttext {
+    font-family: Helvetica;
+    font-size: 20px;
+	color: white;
+	text-align: center;
+	margin: auto;
+}
+
+p.askforinfo {
+    font-family: Helvetica;
+    font-size: 17px;
+	color: white;
+	text-align: left;
+}
+
+p.creatortext {
+    font-family: Helvetica;
+    font-size: 17px;
+	color: white;
+	text-align: center;
+	margin: auto;
+}
+
+p.footertext {
+	font-family: Helvetica;
+	font-weight: bold;
+    color: white;
+	cursor: pointer;
+    font-size: 100%;
+	position: fixed;
+	bottom: -10px; 
+	width: 100%;
+	text-align: center;
+}
+
+p.footertext:hover {
+	cursor: default;
+	cursor: pointer;
+}
+	
+/*Button*/
+.button{
+	margin: auto;
+	background: linear-gradient(#FF7D00 50%, white 30%);
+	border-radius:50%;
+	width:170px;
+	height:170px;
+	-webkit-animation:spin 7s linear infinite;
+	-moz-animation:spin 7s linear infinite;
+	animation:spin 7s linear infinite;
+	transition: box-shadow 0.3s;
+	}
+	@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+	@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+	@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.button:after {
+	margin: auto;
+	position: absolute;
+	display: block;
+	top: 5px;
+	left: 5px;
+	width: 160px;
+	height: 160px;
+	content: "";
+       background: linear-gradient(white -800%, #325082 96%);
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.button:hover {
+-webkit-box-shadow: 0px 0px 99px -20px rgba(0,0,0,1);
+-moz-box-shadow: 0px 0px 99px -20px rgba(0,0,0,1);
+box-shadow: 0px 0px 99px -20px rgba(0,0,0,1);
+	cursor: pointer;
+}
+
+.buttonmatching{
+	margin: auto;
+	background: linear-gradient(#FF7D00 50%, white 30%);
+	border-radius:50%;
+	width:170px;
+	height:170px;
+	-webkit-animation:spin 1s linear infinite;
+	-moz-animation:spin 1s linear infinite;
+	animation:spin 1s linear infinite;
+	}
+	@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+	@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+	@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.buttonmatching:after {
+	margin: auto;
+	position: absolute;
+	display: block;
+	top: 5px;
+	left: 5px;
+	width: 160px;
+	height: 160px;
+	content: "";
+       background: linear-gradient(white -800%, #325082 96%);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+/*Input*/
+input.gamesearch {
+	margin: auto;
+	margin-top: 30px;
+	border: 2px solid #FF7D00;
+    width: 540px;
+    height: 30px;
+    font-size: 22px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	display: block;
+	padding: 2px 2px 2px 8px;
+	outline: none;
+	color: white;
+       background: #325082;
+}
+
+.input_container {
+	padding: auto;
+	margin: auto;
+	margin-top: -10px;
+    width: 550px;
+	display: block;
+	outline: none;
+	font-size: 20px;
+	color: white;
+	font-family: Helvetica;
+}
+
+.input_container ul {
+	list-style: none;
+	border: 1px solid white;
+	padding: 5px;
+}
+
+select.selectplatform{
+	width: 90px;
+	height: 25px;
+	font-size: 15px;
+}
+.input_container ul li {
+	padding: 5px;
+}
+
+.input_container ul li:hover {
+	background-color: #FF7D00;
+	cursor: pointer;
+	color: white;
+}
+
+input.enterinfo {
+	margin: auto;
+	margin-bottom: 10px;
+	border: 2px solid #FF7D00;
+    width: 200px;
+    height: 20px;
+    font-size: 16px;
+	font-family: 'Helvetica';
+	background: #325082;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	display: block;
+	padding: 2px 2px 2px 7px;
+	outline: none;
+	color: white;
+}
+
+input.submitbutton {
+	margin: auto;
+	margin-top: 10px;
+	border: 2px solid #FF7D00;
+	border-radius: 5px;
+    font-size: 17px;
+	font-family: 'Helvetica';
+	background: #325082;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	display: block;
+	outline: none;
+	color: white;
+}
+
+input.submitbutton:hover {
+	margin: auto;
+	margin-top: 10px;
+	border: 2px solid #FF7D00;
+	border-radius: 5px;
+    font-size: 19px;
+	font-family: 'Helvetica';
+	display: block;
+	outline: none;
+	color: white;
+	cursor: pointer;
+}
+
+/*Images*/
+img.creators {
+	border-radius: 70px;
+	width: 100px;
+	height: 100px;
+	margin-top: 10%;
+	transition: border-radius 0.1s;
+	
+}
+
+img.creators:hover {
+	border-radius: 5px;
+}
+
+img.platform {
+	border-radius: 70px;
+	width: 20px;
+	height: 20px;
+	margin-bottom: -5px;
+	margin-left: 5px;
+	
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.playerborder {
+	margin: auto;
+	border: 2px solid #FF7D00;
+	border-radius: 15px;
+}
+a:hover {
+	cursor: pointer;
+}
+
+}
+.label_div {
+	width: 120px;
+	float: left;
+	line-height: 28px;
+}
+#game_list_id {
+	display: none;
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+width: 12px;
+height: 12px;
+}
+
+::-webkit-scrollbar-track {
+border: 1px solid #FF7D00;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+background: #FF7D00;  
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #FF7D00;  
+}
